@@ -1,4 +1,4 @@
-# آوند | Avand-Pargar
+# آوند | Avand-V3
 
 نسخهٔ سروری سامانهٔ مدیریت پروژه، وظایف و همکاری دفتر معماری پرگار. رابط فارسی و راست‌به‌چپ، تم روشن و تاریک و تقویم شمسی.
 
@@ -23,8 +23,8 @@ React 19 + TypeScript + Tailwind/Radix در `src/`؛ Node.js HTTP و PostgreSQL 
 پیش‌نیاز: Node.js 22.12+ (نسخهٔ 24 آزموده شده)، pnpm و PostgreSQL 16+.
 
 ```bat
-git clone https://github.com/Mr-pixle/Avand-Pargar.git
-cd Avand-Pargar
+git clone https://github.com/Mr-pixle/Avand-V3.git
+cd Avand-V3
 corepack enable
 pnpm install --frozen-lockfile
 copy .env.example .env
