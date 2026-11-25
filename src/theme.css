@@ -1,0 +1,184 @@
+/* Theme colors and semantic roles for the application shell. */
+:root {
+  color-scheme: light;
+  --phosphor: #C6F266;
+  --phosphor-ink: #1C1E22;
+  --sage: #A8B89A;
+  --accent-fill: light-dark(#9BC946, #C6F266);
+  --checkbox-fill: light-dark(#DDECC2, #344126);
+  --checkbox-ink-light: hsl(80 62% 25%);
+  --checkbox-ink: light-dark(var(--checkbox-ink-light), hsl(var(--brand-ink)));
+  --today-ink: light-dark(#92480c, #F5A623);
+  --sidebar-width: 276px;
+  --sidebar-inset: 16px;
+  --nav-glass: light-dark(hsl(0 0% 100% / .60), hsl(218 7% 28% / .50));
+  --nav-glass-raised: light-dark(hsl(0 0% 100% / .88), hsl(218 7% 35% / .62));
+  --nav-sheen: light-dark(hsl(0 0% 100% / .75), hsl(0 0% 100% / .08));
+  --studio-ease: cubic-bezier(.2, .8, .2, 1);
+  --brand: 82.642 50.476% 41.176%;
+  --brand-hover: 79 54% 42%;
+  --background: 0 0% 100%;
+  --whiteboard-canvas: 0 0% 100%;
+  --card: 210.000 4.762% 91.765%;
+  --foreground: 220 9.68% 12.16%;
+  --on-brand: 82 40% 12%;
+  --on-brand-hover: 0 0% 100%;
+  --brand-ink: 80 62% 25%;
+  --accent: 81 31% 87%;
+  --secondary: 220 9% 90%;
+  --muted: 220 8% 91%;
+  --muted-foreground: 218 8% 34%;
+  --border: 220 9% 79%;
+  --input: 220 7% 50%;
+  --azure: 80 61% 28%;
+  --azure-foreground: 0 0% 100%;
+  --leaf: 139.615385 29.885057% 34.117647%; /* #3D714E */
+  --leaf-foreground: 0.000000 0.000000% 100.000000%; /* #FFFFFF */
+  --leaf-soft: 125.454545 25.581395% 91.568627%; /* #E4EFE5 */
+  --leaf-ink: 140.000000 31.468531% 28.039216%; /* #315E40 */
+  --destructive: 353.500000 55.555556% 42.352941%; /* #A8303D */
+  --destructive-foreground: 0.000000 0.000000% 100.000000%; /* #FFFFFF */
+  --danger-soft: 353.333333 56.250000% 93.725490%; /* #F8E6E8 */
+  --warning-soft: 42.000000 57.692308% 89.803922%; /* #F4EBD6 */
+  --warning-ink: 38.620690 58.389262% 29.215686%; /* #76571F */
+  --info-soft: 195.000000 28.571429% 91.764706%; /* #E4EDF0 */
+  --info-ink: 196.071429 34.567901% 31.764706%; /* #355E6D */
+  --elevated-alert: 24.375000 59.259259% 89.411765%; /* #F4E1D4 */
+  --elevated-alert-ink: 24.000000 57.575758% 32.352941%; /* #824923 */
+  --shadow: 120.000000 7.500000% 15.686275%; /* #252B25 */
+  --primary: var(--brand);
+  --primary-foreground: var(--on-brand);
+  --secondary-foreground: var(--foreground);
+  --accent-foreground: var(--foreground);
+  --card-foreground: var(--foreground);
+  --popover: var(--card);
+  --popover-foreground: var(--foreground);
+  --ring: var(--brand-hover);
+  --surface: var(--card);
+  --line: var(--border);
+  /* Existing azure utilities denote selection and in-progress work. */
+  --azure-soft: var(--accent);
+  --azure-ink: var(--brand-ink);
+  --chart-todo: hsl(var(--brand));
+  --chart-doing: hsl(var(--azure));
+  --chart-done: hsl(var(--leaf));
+  --chart-pos: hsl(var(--brand));
+  --chart-neg: hsl(var(--destructive));
+  --status-warning: hsl(var(--warning-ink));
+  --status-critical: hsl(var(--destructive));
+  --project-red: var(--status-critical);
+  --project-yellow: var(--status-warning);
+  --project-green: hsl(var(--leaf));
+  --score-red: var(--project-red);
+  --score-yellow: var(--project-yellow);
+  --score-green: var(--project-green);
+  --radius: 1rem;
+  --glass-bg: hsl(var(--card) / .78);
+  --glass-bg-strong: hsl(var(--card) / .95);
+  --glass-bg-item: hsl(var(--card) / .62);
+  --glass-bg-soft: hsl(var(--card) / .55);
+  --glass-solid: hsl(var(--card));
+  --glass-border: hsl(0 0% 100% / .68);
+  --glass-edge: hsl(var(--shadow) / .08);
+  --glass-highlight: light-dark(hsl(0 0% 100% / .9), hsl(0 0% 100% / .07));
+  --glass-tint: hsl(var(--brand) / .10);
+  --glass-shadow: 0 8px 32px hsl(var(--shadow) / .05);
+  --glass-shadow-lift: 0 2px 4px hsl(var(--shadow) / .09), 0 18px 40px -16px hsl(var(--shadow) / .35);
+  --glass-shadow-pop: 0 2px 6px hsl(var(--shadow) / .10), 0 28px 64px -22px hsl(var(--shadow) / .48);
+  --glass-blur: 20px;
+  --glass-blur-strong: 26px;
+  --sheen: light-dark(hsl(0 0% 100% / .55), hsl(0 0% 100% / .06));
+  --font-sans: 'Plus Jakarta Sans', 'Roboto', 'Anjoman', 'Tahoma', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'Roboto', 'Anjoman', 'Segoe UI', sans-serif;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --brand: 92.000 17.442% 66.275%;
+  --brand-hover: 78.857 84.337% 67.451%;
+  --background: 220.000 9.091% 6.471%;
+  --whiteboard-canvas: 0 0% 12%;
+  --card: 220.000 7.692% 15.294%;
+  --foreground: 0.000 0.000% 96.078%;
+  --on-brand: 132.000000 9.803922% 10.000000%; /* #171C18 */
+  --on-brand-hover: 132.000000 9.803922% 10.000000%; /* #171C18 */
+  --brand-ink: 79 84% 71%;
+  --accent: 82 13% 20%;
+  --secondary: 217 7% 20%;
+  --muted: 218 8% 17%;
+  --muted-foreground: 219 9% 72%;
+  --border: 217.500 6.452% 24.314%;
+  --input: 215 6% 46%;
+  --azure: 78.857 84.337% 67.451%;
+  --azure-foreground: 132.000000 9.803922% 10.000000%; /* #171C18 */
+  --leaf: 130.212766 29.559748% 68.823529%; /* #98C7A0 */
+  --leaf-foreground: 132.000000 9.803922% 10.000000%; /* #171C18 */
+  --leaf-soft: 133.636364 21.153846% 20.392157%; /* #293F2E */
+  --leaf-ink: 129.473684 30.645161% 75.686275%; /* #AED4B4 */
+  --destructive: 355.333333 75.000000% 76.470588%; /* #F0969D */
+  --destructive-foreground: 342.352941 29.824561% 11.176471%; /* #251419 */
+  --danger-soft: 345.517241 24.786325% 22.941176%; /* #492C33 */
+  --warning-soft: 42.000000 30.612245% 19.215686%; /* #403722 */
+  --warning-ink: 39.633028 78.417266% 72.745098%; /* #F0CB83 */
+  --info-soft: 198.461538 24.528302% 20.784314%; /* #283A42 */
+  --info-ink: 196.250000 38.095238% 75.294118%; /* #A8CBD8 */
+  --elevated-alert: 20.000000 29.203540% 22.156863%; /* #493328 */
+  --elevated-alert-ink: 24.950495 78.294574% 74.705882%; /* #F1B68C */
+  --shadow: 0.000000 0.000000% 0.000000%; /* #000000 */
+  --glass-bg: hsl(var(--card) / .76);
+  --glass-bg-strong: hsl(var(--card) / .96);
+  --glass-bg-item: hsl(var(--card) / .66);
+  --glass-bg-soft: hsl(var(--card) / .48);
+  --glass-border: hsl(0 0% 100% / .115);
+  --glass-shadow: 0 12px 32px hsl(var(--shadow) / .28);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --brand: 92.000 17.442% 66.275%;
+    --brand-hover: 78.857 84.337% 67.451%;
+    --background: 220.000 9.091% 6.471%;
+    --whiteboard-canvas: 0 0% 12%;
+    --card: 220.000 7.692% 15.294%;
+    --foreground: 0.000 0.000% 96.078%;
+    --on-brand: 132.000000 9.803922% 10.000000%; /* #171C18 */
+    --on-brand-hover: 132.000000 9.803922% 10.000000%; /* #171C18 */
+    --brand-ink: 79 84% 71%;
+    --accent: 82 13% 20%;
+    --secondary: 217 7% 20%;
+    --muted: 218 8% 17%;
+    --muted-foreground: 219 9% 72%;
+    --border: 217.500 6.452% 24.314%;
+    --input: 215 6% 46%;
+    --azure: 78.857 84.337% 67.451%;
+    --azure-foreground: 132.000000 9.803922% 10.000000%; /* #171C18 */
+    --leaf: 130.212766 29.559748% 68.823529%; /* #98C7A0 */
+    --leaf-foreground: 132.000000 9.803922% 10.000000%; /* #171C18 */
+    --leaf-soft: 133.636364 21.153846% 20.392157%; /* #293F2E */
+    --leaf-ink: 129.473684 30.645161% 75.686275%; /* #AED4B4 */
+    --destructive: 355.333333 75.000000% 76.470588%; /* #F0969D */
+    --destructive-foreground: 342.352941 29.824561% 11.176471%; /* #251419 */
+    --danger-soft: 345.517241 24.786325% 22.941176%; /* #492C33 */
+    --warning-soft: 42.000000 30.612245% 19.215686%; /* #403722 */
+    --warning-ink: 39.633028 78.417266% 72.745098%; /* #F0CB83 */
+    --info-soft: 198.461538 24.528302% 20.784314%; /* #283A42 */
+    --info-ink: 196.250000 38.095238% 75.294118%; /* #A8CBD8 */
+    --elevated-alert: 20.000000 29.203540% 22.156863%; /* #493328 */
+    --elevated-alert-ink: 24.950495 78.294574% 74.705882%; /* #F1B68C */
+    --shadow: 0.000000 0.000000% 0.000000%; /* #000000 */
+    --glass-bg: hsl(var(--card) / .76);
+    --glass-bg-strong: hsl(var(--card) / .96);
+    --glass-bg-item: hsl(var(--card) / .66);
+    --glass-bg-soft: hsl(var(--card) / .48);
+    --glass-border: hsl(0 0% 100% / .115);
+    --glass-shadow: 0 12px 32px hsl(var(--shadow) / .28);
+  }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root, :root[data-theme="dark"], :root:not([data-theme]) { --glass-bg: hsl(var(--card)); --glass-bg-strong: hsl(var(--card)); --glass-bg-soft: hsl(var(--card)); --glass-bg-item: hsl(var(--card)); }
+}
+@media (prefers-reduced-transparency: reduce) {
+  :root, :root[data-theme="dark"], :root:not([data-theme]) { --glass-bg: hsl(var(--card)); --glass-bg-strong: hsl(var(--card)); --glass-bg-soft: hsl(var(--card)); --glass-bg-item: hsl(var(--card)); --glass-blur: 0px; --glass-blur-strong: 0px; }
+}

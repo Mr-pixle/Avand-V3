@@ -1,0 +1,1 @@
+(function(){var theme='light';try{theme=localStorage.getItem('avand-theme-v1')==='dark'?'dark':'light'}catch(e){}document.documentElement.dataset.theme=theme;document.documentElement.style.background=theme==='dark'?'#0c0d11':'#faf9f6';})();

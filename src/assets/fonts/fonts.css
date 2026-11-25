@@ -1,0 +1,15 @@
+@font-face { font-family: Anjoman; src: url('./Anjoman-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0600-08FF,U+200C-200F,U+FB50-FDFF,U+FE70-FEFF; }
+@font-face { font-family: Anjoman; src: url('./Anjoman-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; unicode-range: U+0600-08FF,U+200C-200F,U+FB50-FDFF,U+FE70-FEFF; }
+@font-face { font-family: Anjoman; src: url('./Anjoman-SemiBold.ttf') format('truetype'); font-weight: 600; font-style: normal; font-display: swap; unicode-range: U+0600-08FF,U+200C-200F,U+FB50-FDFF,U+FE70-FEFF; }
+@font-face { font-family: Anjoman; src: url('./Anjoman-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; unicode-range: U+0600-08FF,U+200C-200F,U+FB50-FDFF,U+FE70-FEFF; }
+@font-face { font-family: Roboto; src: url('./Roboto-Regular.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-024F,U+0660-0669,U+06F0-06F9,U+2000-200B,U+2010-206F,U+20A0-20CF; }
+@font-face { font-family: Roboto; src: url('./Roboto-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; unicode-range: U+0000-024F,U+0660-0669,U+06F0-06F9,U+2000-200B,U+2010-206F,U+20A0-20CF; }
+@font-face { font-family: Roboto; src: url('./Roboto-Bold.ttf') format('truetype'); font-weight: 700; font-style: normal; font-display: swap; unicode-range: U+0000-024F,U+0660-0669,U+06F0-06F9,U+2000-200B,U+2010-206F,U+20A0-20CF; }
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('./PlusJakartaSans.ttf') format('truetype');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
